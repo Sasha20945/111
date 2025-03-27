@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agridera Contact Us</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        header {
+            background: #fff;
+            padding: 30px 10px;
+            box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        header img {
+            height: 50px;
+        }
+
+        nav {
+            display: flex;
+            gap: 50px;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #333;
+            font-weight: bold;
+        }
+
+        .search-bar {
+            width: 250px; 
+            height: 30px; 
+            font-size: 14px; 
+            padding: 5px 8px;
+        }
+        
+        
+        .address {
+            text-align: center;
+            font-family: Arial, sans-serif;
+            color: #4A4A4A;
+        }
+        
+        h3 {
+            color: #3C7D32;
+        }
+        
+        hr {
+            width: 50px;
+            border: 1px solid #3C7D32;
+            margin: 5px auto;
+        }
+        
+        a {
+            color: #3C7D32;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        .banner {
+            width: 100vw; 
+            height: 30vh; 
+            background: url('images/baner.jpg') no-repeat center center/cover;
+        }
+        
+        .container {
+            width: 70%;
+            margin: 40px auto;
+            background-color: #f9f9f9;
+            padding: 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        h2 {
+            text-align: left;
+            margin-bottom: 20px;
+        }
+
+        form {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+        }
+
+        input, select, textarea {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        textarea {
+            height: 120px;
+        }
+
+        .full-width {
+            grid-column: span 2;
+        }
+
+        .captcha-container {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .captcha-box {
+            background-color: #eee;
+            padding: 10px 20px;
+            border-radius: 5px;
+        }
+
+        button {
+            background-color: #5ca942;
+            color: #fff;
+            border: none;
+            padding: 12px 20px;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+
+        button:hover {
+            background-color: #4d9137;
+        }
+        footer {
+            background: #243238;
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+        }
+        .footer-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            max-width: 80%;
+            margin: auto;
+        }
+        .footer-links {
+            list-style: none;
+            padding: 0;
+            display: flex;
+            gap: 20px;
+        }
+        .footer-links li {
+            display: inline;
+        }
+        .footer-links a {
+            color: white;
+            text-decoration: none;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Шапка сайта -->
+    <header>
+        <img src="C:\Users\hehbh\OneDrive\Рабочий стол\Практика\images/Agridera.jpg" alt="Agridera Logo">
+        <nav>
+            <a href="index.html">Головна</a>
+            <a href="#">Про компанію</a>
+            <a href="tom.html">Продукти</a>
+            <a href="#">Послуги</a>
+            <a href="#">Контакти</a>
+        </nav>
+        <input type="text" class="search-bar" placeholder="Пошук">
+    </header>
+
+    <!-- Баннер -->
+    <div class="banner"></div>
+    <!-- Форма -->
+    <div class="container">
+        <h2>Contact us</h2>
+        <form>
+            <input type="text" name="name" placeholder="Name *" required>
+            <input type="text" name="company" placeholder="Company Name">
+            <input type="text" name="position" placeholder="Position">
+            <input type="text" name="city" placeholder="City">
+            <input type="text" name="country" placeholder="Country">
+            <input type="text" name="phone" placeholder="Telephone">
+            <input type="email" name="email" placeholder="Email *" required>
+            <select name="type">
+                <option value="seed producer">Seed producer</option>
+                <option value="farmer">Farmer</option>
+                <option value="researcher">Researcher</option>
+                <option value="other">Other</option>
+            </select>
+            <input type="text" name="other" placeholder="If other, please specify">
+            <textarea name="interest" placeholder="You are interested in"></textarea>
+
+            <div class="captcha-container full-width">
+                <div class="captcha-box">7CJ    3</div>
+                <input type="text" name="captcha" placeholder="Please type this code">
+            </div>
+
+            <button type="submit" class="full-width">Send Message</button>
+        </form>
+        <div class="address">
+            <h3>Our Address</h3>
+            <hr>
+            <p>AGRIDERA Seeds & Agriculture Ltd.</p>
+            <p>P.O Box 103,</p>
+            <p>Gedera 70750, Israel.</p>
+            <p>Telephone: <a href="tel:+97289449222">+0661282295</a></p>
+        </div>
+    </div>
+    <footer>
+        <div class="footer-container">
+            <ul class="footer-links">
+                <li><a href="https://steamcommunity.com/profiles/76561199026660670/">Профіль</a></li>
+                <li><a href="#">Менеджмент</a></li>
+                <li><a href="#">Продукти</a></li>
+                <li><a href="#">Дослідження</a></li>
+                <li><a href="#">Посилання</a></li>
+                <li><a href="#">Карта сайту</a></li>
+                <li><a href="cont.html">Контакти</a></li>
+            </ul>
+            <div class="social-icons">
+                <img src="C:\Users\hehbh\OneDrive\Рабочий стол\Практика\images/ink.jpg" alt="LinkedIn"></a>
+                    <a href="C:\Users\hehbh\OneDrive\Рабочий стол\Практика\images/inst.jpg"><img src="C:\Users\hehbh\OneDrive\Рабочий стол\Практика\images/inst.jpg" alt="Instagram"></a>
+                    <a href="https://www.youtube.com/@Sasha-bn3em"><img src="C:\Users\hehbh\OneDrive\Рабочий стол\Практика\images/yt.jpg" alt="YouTybe"></a>
+                    <a href="https://steamcommunity.com/profiles/76561199026660670/"><img src="C:\Users\hehbh\OneDrive\Рабочий стол\Практика\images/twit.jpg" alt="Twitter"></a>
+                    <a href="https://www.faceit.com/ru/players/RaPiX_23"><img src="C:\Users\hehbh\OneDrive\Рабочий стол\Практика\images/fec.jpg" alt="Facebook"></a>
+            </div>
+        </div>
+        <p>&copy; 2025 Agridera SEEDS & AGRICULTURE LTD.</p>
+    </footer>
+</body>
+
+</html>
